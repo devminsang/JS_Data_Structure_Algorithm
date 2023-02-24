@@ -5,17 +5,17 @@ const sameFrequency = (a, b) => {
     return false;
   }
 
-  for (val of String(a)) {
-    if (obj[val]) {
-      obj[val] += 1;
+  for (let val1 of String(a)) {
+    if (obj[val1]) {
+      obj[val1] += 1;
     } else {
-      obj[val] = 1;
+      obj[val1] = 1;
     }
   }
 
-  for (val1 of String(b)) {
-    if (obj[val1]) {
-      obj[val1] -= 1;
+  for (let val2 of String(b)) {
+    if (obj[val2]) {
+      obj[val2] -= 1;
     } else {
       return false;
     }
